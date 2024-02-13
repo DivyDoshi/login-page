@@ -1,0 +1,117 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background:url('https://i.pinimg.com/originals/09/05/a7/0905a74092fa43fce6218aa48f6a26a4.jpg') no-repeat;
+    background-size:cover;
+    background-color: #66fcf1;
+  animation:animateBg 4s linear infinite;
+}
+@keyframes animateBg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border-radius: 15px;
+    display: flex;
+    border: 2px solid rgba(255, 0, 0, 0.349);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+}
+.box1{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 1px solid white;
+}
+.box1 label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: white;
+    transition: .5s;
+}
+.box input:focus  ~ label,
+.box input:valid  ~ label {
+  top:-5px;
+}
+.box1 input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 35px 0 5px;
+}
+
+.forgot{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    margin:-15px 0 15px;
+    font-size:.9em;
+}
+.forgot a{
+    text-decoration: none;
+    color: white;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: 1px dashed aqua;
+    cursor: pointer;
+    background-color: black;
+    color: #66fcf1;
+    border-radius: 140px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.register{
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+    font-size: .9em;
+}
+.register p a {
+    color:var(--black-color);
+    text-decoration:none;
+    font-weight:600;
+  }
+  .register p a:hover{
+    text-decoration: underline;
+  }
+ 
+  
